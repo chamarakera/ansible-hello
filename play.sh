@@ -1,3 +1,3 @@
-# The below command runs the playbook on your local machine. 
-# Modify it as necessary for remote execution.
-ansible-playbook -i 127.0.0.1 playbook.yaml -e "hello_from_command_args='hello, from comand line args'"
+# This command runs playbook.yaml against the local machine and passes an extra 
+# variable hello_from_extra_args. Configure ansible investory for remote execution.
+ansible-playbook playbook.yaml -e "hello_from_extra_args='hello, from extra args'"

@@ -9,9 +9,9 @@
   notify:
     - hello from handler
 
-- name: Print hello from command args
+- name: Print hello from extra args
   ansible.builtin.debug:
-    msg: "{{ hello_from_command_args }}"
+    msg: "{{ hello_from_extra_args }}"
 
 - name: Write hello to file
   ansible.builtin.template:
