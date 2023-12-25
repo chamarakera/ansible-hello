@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - { role: roles/example, hello_from_role_args: "hello, from role args"}

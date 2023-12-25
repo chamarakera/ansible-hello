@@ -1,0 +1,20 @@
+- name: Print hello from defaults
+  ansible.builtin.debug:
+    msg: "{{ message_from_defaults }}"
+
+- name: Print hello from role args
+  ansible.builtin.debug:
+    msg: "{{ hello_from_role_args }}"
+  notify:
+    - hello from handler
+
+- name: Print hello from command args
+  ansible.builtin.debug:
+    msg: "{{ hello_from_command_args }}"
+
+- name: Write hello to file
+  ansible.builtin.template:
+    src: hello.j2
+    dest: hello.sh
+  notify:
+    - hello from handler
