@@ -1,2 +1,3 @@
-message_from_defaults: "hello, from defaults"
-hello_from_template: "from template"
+---
+hello_from_defaults: "hello, from defaults"
+hello_from_the_template: "from the ansible templates"

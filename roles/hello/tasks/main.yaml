@@ -1,6 +1,7 @@
+---
 - name: Print hello from defaults
   ansible.builtin.debug:
-    msg: "{{ message_from_defaults }}"
+    msg: "{{ hello_from_defaults }}"
 
 - name: Print hello from role args
   ansible.builtin.debug:

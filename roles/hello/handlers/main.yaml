@@ -1,3 +1,4 @@
+---
 - name: hello from handler
   ansible.builtin.debug:
     msg: "Hello from handler"
