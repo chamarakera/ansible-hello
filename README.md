@@ -6,7 +6,7 @@ Contains a series of tasks designed to demonstrate various Ansible functionaliti
 
 To run playbook in your local machine:
 ```
-./play.sh
+source play.sh
 ```
 
 
